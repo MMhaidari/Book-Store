@@ -9,12 +9,12 @@ const BooksList = () => {
       title: 'life',
     },
     {
-      id: 1,
+      id: 2,
       author: 'ali',
       title: 'death',
     },
     {
-      id: 1,
+      id: 3,
       author: 'kilyan morfiy',
       title: 'peaky blinder',
     },
