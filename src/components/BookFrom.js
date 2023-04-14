@@ -16,7 +16,7 @@ const BookForm = () => {
     setAuthor(event.target.value);
   };
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
     const itemId = uuidv4();
     const book = {
@@ -25,7 +25,7 @@ const BookForm = () => {
       author: enteredAuthor,
     };
     dispatch(addBook(book));
-
+    window.location.reload();
     setTitle('');
     setAuthor('');
   };
