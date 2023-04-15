@@ -1,0 +1,23 @@
+div[role='progressbar'] {
+    --size: 6rem;
+    --fg: #4386bf;
+    --bg: #def;
+    --value: 65;
+    --pgPercentage: var(--value);
+    font-size: 2rem;
+    width: 6rem;
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background:
+        radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    color: var(--fg);
+
+}
+
+div[role='progressbar']::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) '%';
+}

@@ -1,8 +1,7 @@
 .book-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 50% 1fr 1fr;
   background-color: #fff;
-  max-width: 95rem;
   margin: 4rem 6rem;
   padding: 3rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
@@ -17,6 +16,10 @@
 
 .title-author {
   line-height: 0;
+}
+
+.category-random {
+  color: #888;
 }
 
 .title {
@@ -44,6 +47,12 @@
 
 .btn-container button:hover {
   cursor: pointer;
+}
+
+.Line-1 {
+  width: 0.02rem;
+  height: 2rem;
+  border: solid 0.1rem #e8e8e8;
 }
 
 .completion-percentage {
@@ -86,6 +95,7 @@
 .current {
   font-size: 1.2rem;
   font-weight: 300;
+  text-transform: uppercase;
   color: #121212;
 }
 

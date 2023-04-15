@@ -3,7 +3,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import ProgressBar from './progressBar';
 import './Book.css';
+
+const categoriesBook = ['action', 'comdy', 'thriller', 'history', 'family', 'fantecy', 'joke'];
+const randomCategories = Math.floor(Math.random() * categoriesBook.length);
+const randomItem = categoriesBook[randomCategories];
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
@@ -11,6 +16,7 @@ const Book = ({ book }) => {
     <div className="book-container">
       <div className="book-intial--info" key={book.id}>
         <div className="title-author">
+          <h4 className="category-random">{randomItem}</h4>
           <h3 className="title">{book.title}</h3>
           <h3 className="author">{book.author}</h3>
         </div>
@@ -18,6 +24,7 @@ const Book = ({ book }) => {
           <button type="button">
             Comments
           </button>
+          <div className="Line-1"></div>
           <button
             type="button"
             onClick={() => {
@@ -26,17 +33,15 @@ const Book = ({ book }) => {
           >
             Remove
           </button>
+          <div className="Line-1"></div>
           <button type="button">
             Edit
           </button>
         </div>
       </div>
       <div className="completion-percentage">
-        <div className="oval-2"></div>
+        <ProgressBar />
         <div className="percentage">
-          {Math.floor(Math.random() * (99 - 0)) + 0}
-          <span>%</span>
-          <br />
           <span>completed</span>
         </div>
         <div className="Line-2"></div>
