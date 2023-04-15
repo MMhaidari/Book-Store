@@ -1,61 +1,60 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: .8rem 2.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.8rem 2.1rem;
 }
 
 .navbar-contents {
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .navbar-contents h3 {
-    font-size: 2rem;
-    color: #0290ff;
+  font-size: 2rem;
+  color: #0290ff;
 }
 
 .navbar-contents ul {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar-contents li {
-    list-style: none;
-    font-size: 1.4rem;
-}
-
-.navbar-contents li a {
-    text-decoration: none;
-    color: #121212;
-
+  list-style: none;
+  font-size: 1.4rem;
 }
 
 .category a {
-    color: #121212;
-    font-size: 1.2rem;
+  color: #121212;
+  font-size: 1.2rem;
+}
+
+.navbar-contents li a {
+  text-decoration: none;
+  color: #121212;
 }
 
 .oval {
-    width: 2.813rem;
-    height: 2.813rem;
-    margin-left: auto;
-    margin-right: 6.5rem;
-    margin-top: 1rem;
-    padding: 0.875rem;
-    border: solid 1px #e8e8e8;
-    border-radius: 50%;
+  width: 2.813rem;
+  height: 2.813rem;
+  margin-left: auto;
+  margin-right: 6.5rem;
+  margin-top: 1rem;
+  padding: 0.875rem;
+  border: solid 1px #e8e8e8;
+  border-radius: 50%;
 }
 
 .oval:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .Mask {
-    margin-top: 0.2rem;
-    padding-left: 20%;
-    width: 2rem;
-    height: 2rem;
+  margin-top: 0.2rem;
+  padding-left: 20%;
+  width: 2rem;
+  height: 2rem;
 }
