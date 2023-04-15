@@ -1,9 +1,10 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/self-closing-comp */
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import { removeBook } from '../redux/books/booksSlice';
-import ProgressBar from './progressBar';
 import './Book.css';
 
 const categoriesBook = ['action', 'comdy', 'thriller', 'history', 'family', 'fantecy', 'joke'];
@@ -12,6 +13,12 @@ const randomItem = categoriesBook[randomCategories];
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
+  const [percent, setPercent] = useState(Math.floor(Math.random() * 99));
+
+  const handleClick = () => {
+    setPercent((prevState) => (prevState >= 100 ? prevState : prevState + 10));
+  };
+
   return (
     <div className="book-container">
       <div className="book-intial--info" key={book.id}>
@@ -39,10 +46,16 @@ const Book = ({ book }) => {
           </button>
         </div>
       </div>
-      <div className="completion-percentage">
-        <ProgressBar />
-        <div className="percentage">
-          <span>completed</span>
+      <div className="progress">
+        <div style={{ width: '4.25rem', height: '4.25rem' }}>
+          <CircularProgressbar value={percent} styles={buildStyles({ pathColor: '#0290ff' })} />
+        </div>
+        <div className="percent">
+          <p className="percentage">
+            {percent}
+            %
+          </p>
+          <span className="competed">Completed</span>
         </div>
         <div className="Line-2"></div>
       </div>
@@ -53,7 +66,7 @@ const Book = ({ book }) => {
           {' '}
           {Math.floor(Math.random() * (50 - 0)) + 1}
         </h4>
-        <button type="button" className="update-progress">UPDATE PROGRESS</button>
+        <button type="button" className="update-progress" handleClick={handleClick}>UPDATE PROGRESS</button>
       </div>
     </div>
   );

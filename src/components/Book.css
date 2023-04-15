@@ -1,6 +1,6 @@
 .book-container {
   display: grid;
-  grid-template-columns: 50% 1fr 1fr;
+  grid-template-columns: 40% 1fr 1fr;
   background-color: #fff;
   margin: 4rem 6rem;
   padding: 3rem;
@@ -19,7 +19,9 @@
 }
 
 .category-random {
-  color: #888;
+  color: #6d6c6c;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .title {
@@ -55,29 +57,29 @@
   border: solid 0.1rem #e8e8e8;
 }
 
-.completion-percentage {
+.progress {
   display: flex;
-  margin-left: 4.6rem;
   align-items: center;
-  gap: 1rem;
+  gap: 1.2rem;
+  margin-left: 4rem;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .percentage {
-  font-size: 2.5rem;
-  line-height: 1.6rem;
+  font-size: 3rem;
+  line-height: 0;
 }
 
-.percentage span {
-  font-size: 1.3rem;
-  color: #121212;
-}
-
-.oval-2 {
-  width: 2.813rem;
-  height: 2.813rem;
-  padding: 0.875rem;
-  border: 0.5rem solid #379cf6;
-  border-radius: 50%;
+.competed {
+  font-size: 1.2rem;
+  line-height: 0;
+  color: #a09f9f;
+  margin-bottom: 1.4rem;
 }
 
 .Line-2 {
@@ -89,14 +91,14 @@
 
 .chapter {
   line-height: 0.5rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .current {
   font-size: 1.2rem;
   font-weight: 300;
   text-transform: uppercase;
-  color: #121212;
+  color: #a09f9f;
 }
 
 .chapter-no {
@@ -107,10 +109,12 @@
 }
 
 .update-progress {
+  display: inline-block;
   background-color: #0290ff;
   padding: 0.6rem 1.4rem;
   border: none;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
   border-radius: 0.2rem;
   color: #fff;
+  font-size: 1.3rem;
 }
