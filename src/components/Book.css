@@ -1,0 +1,120 @@
+.book-container {
+  display: grid;
+  grid-template-columns: 40% 1fr 1fr;
+  background-color: #fff;
+  margin: 4rem 6rem;
+  padding: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.book-intial--info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-transform: capitalize;
+}
+
+.title-author {
+  line-height: 0;
+}
+
+.category-random {
+  color: #6d6c6c;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.author {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.btn-container button {
+  border: none;
+  background-color: transparent;
+  color: #4386bf;
+  font-size: 1.2rem;
+}
+
+.btn-container button:hover {
+  cursor: pointer;
+}
+
+.Line-1 {
+  width: 0.02rem;
+  height: 2rem;
+  border: solid 0.1rem #e8e8e8;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-left: 4rem;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.percentage {
+  font-size: 3rem;
+  line-height: 0;
+}
+
+.competed {
+  font-size: 1.2rem;
+  line-height: 0;
+  color: #a09f9f;
+  margin-bottom: 1.4rem;
+}
+
+.Line-2 {
+  width: 0.09rem;
+  height: 6.6rem;
+  margin: 1.8rem 3.688rem 0 4.938rem;
+  border: solid 0.1rem #e8e8e8;
+}
+
+.chapter {
+  line-height: 0.5rem;
+  margin-left: 2rem;
+}
+
+.current {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a09f9f;
+}
+
+.chapter-no {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #121212;
+  letter-spacing: -0.4px;
+}
+
+.update-progress {
+  display: inline-block;
+  background-color: #0290ff;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
