@@ -1,0 +1,106 @@
+.book-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffffff;
+    max-width: 95rem;
+    margin: 4rem 6rem;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.book-intial--info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-transform: capitalize;
+}
+
+.title-author {
+    line-height: 0;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #4386bf;
+}
+
+.btn-container {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.btn-container button {
+    border: none;
+    background-color: transparent;
+    color: #4386bf;
+    font-size: 1.2rem;
+}
+
+.btn-container button:hover {
+    cursor: pointer;
+}
+
+.completion-percentage {
+    display: flex;
+    margin-left: 4.6rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.percentage {
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+}
+
+.percentage span {
+    font-size: 1.3rem;
+    color: #121212;
+}
+
+.oval-2 {
+    width: 2.813rem;
+    height: 2.813rem;
+    padding: 0.875rem;
+    border: .5rem solid #379cf6;
+    border-radius: 50%;
+}
+
+.Line-2 {
+    width: 0.09rem;
+    height: 6.6rem;
+    margin: 1.8rem 3.688rem 0 4.938rem;
+    border: solid .1rem #e8e8e8;
+}
+
+.chapter {
+    line-height: .5rem;
+    margin-left: 4rem;
+}
+
+.current {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #121212;
+}
+
+.chapter-no {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #121212;
+    letter-spacing: -0.4px;
+}
+
+.update-progress {
+    background-color: #0290ff;
+    padding: .6rem 1.4rem;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: .2rem;
+    color: #ffffff;
+}

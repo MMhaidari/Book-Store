@@ -1,0 +1,37 @@
+form {
+    display: flex;
+    gap: 3rem;
+    padding-left: 6rem;
+}
+
+form input:first-child {
+    width: 42rem;
+    height: 2.813rem;
+    padding: .5rem 1.8rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+}
+
+.author-input {
+    width: 20rem;
+    height: 2.813rem;
+    padding: .5rem 1.8rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+}
+
+form button {
+    background-color: #0290ff;
+    padding: .3rem 1.8rem;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: .2rem;
+    color: #ffffff;
+}
+
+form button:hover {
+    cursor: pointer;
+}
